@@ -16,12 +16,14 @@
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
     	<div class="navbar-header">
+          <!-- responsive menu <![endif]-->
         	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
          		<span class="sr-only">Toggle navigation</span>
             	<span class="icon-bar"></span>
             	<span class="icon-bar"></span>
             	<span class="icon-bar"></span>
           	</button>
+            <!-- responsive menu <![endif]-->
           	<a class="navbar-brand"><%= link_to "Wikiful", root_path %></a>
         </div>
 
@@ -39,14 +41,14 @@
     	<div class="col-sm-3 sidebar">
         	<ul class="nav nav-sidebar">
             	<li class="active"><%= link_to "Write a Wiki", new_article_path %></li>
-          	</ul>
+          </ul>
           	
-          	<ul class="nav nav-sidebar">
-          		<h4>Categories</h4>
-            	<% @categories.each do |category| %>
-       			<li><%= link_to category.name, category %></li>
-     			<% end %>
-         	</ul>
+        	<ul class="nav nav-sidebar">
+        		<h4>Categories</h4>
+            <% @categories.each do |category| %>
+     			    <li><%= link_to category.name, category%></li>
+   			      <% end %>
+       	  </ul>
           	
           	<ul class="nav nav-sidebar">
           		<h4>About Wikiful</h4>
