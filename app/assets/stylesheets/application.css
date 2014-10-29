@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+.navbar-brand
+{
+  background: no-repeat left center;
+  height: 41px;
+  width: 177px;
+  margin-top: -30px;
+}

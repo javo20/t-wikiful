@@ -5,6 +5,9 @@ class ArticlesController < ApplicationController
 
 	def show
 		@article = Article.find(params[:id])
+		# render view articles/show and pass forward any instance variables (eg @article)
+		# take the info here and pop it in a bag and send it to the layout
+		# Render layout called 'application' unless a layout of name article exists then render thatoerthwise state one explicityly.
 	end
 
 	def new
